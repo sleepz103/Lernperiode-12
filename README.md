@@ -15,14 +15,39 @@ Ich möchte ein interaktives Dashboard entwickeln, das reale Wetterdaten mit sim
 - den Wasserbedarf der Pflanzen für die nächsten 24 Stunden vorhersagen
 
 - alle Daten anschaulich darstellen
+
+Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverarbeitung und Visualisierung zu sammeln und ein besseres Verständnis für IoT-Systeme zu entwickeln. (68)
+
+*Note: This project will largely be carried out using AI. Reason: I noticed that remembering what to write wasn't ever important as knowing how to write. Although reduces lot of problem-solving moments, working on projects with AI has proven to be beneficial, as it saves time and allows to progress with creation.*
+
+
+
+1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
+
+2. As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably (tests, back-end block)
+
+3. As a student developer, I want to visualize all collected and predicted data in one dashboard, in order to connect weather, plants, and predictions in a meaningful way. (front-end block)
+
+4. As a person who wants to know what to dress today, I want to see the current weather and forecast, in order to choose clothes that match the temperature and conditions. (is this an epic?)
+
+5. As my mum who wants to know when the plant was last watered, I want to see a clear watering history and next predicted watering time, in order to care for the plants efficiently. (design block)
+
+6. As a person who cares how the work is documented, I want to see code as infrastructure and smart commit names, in order to understand the design and learning outcomes of the project. (refactoring block)
+
+# Daily plans
+
+## 07.11
+
+As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics.
+
+- [ ] As the developer, I want to draw a plan and all my ideas
   
-  Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverarbeitung und Visualisierung zu sammeln und ein besseres Verständnis für IoT-Systeme zu entwickeln. (68)
-1. As a person who wants to know what to dress today, I want to see the current weather and forecast, in order to choose clothes that match the temperature and conditions.
+  - [ ] Schema of connections
+  
+  - [ ] What is involved in the projects and what not
+  
+  - [ ] The end result
 
-2. As my mum who wants to know when the plant was last watered, I want to see a clear watering history and next predicted watering time, in order to care for the plants efficiently.
+- [ ] Build a connection to a open meteo
 
-3. As a data analyst, I want to explore the relationship between weather data and simulated plant data, in order to understand how environmental conditions affect plant health.
-
-4. As a person who cares how the work is documented, I want clear explanations of the data flow and architecture, in order to understand the design and learning outcomes of the project.
-
-5. As a student developer, I want to visualize all collected and predicted data in one dashboard, in order to connect weather, plants, and predictions in a meaningful way.
+- [ ] Create script that generates appropriate plant data according to my room plants
