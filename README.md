@@ -48,4 +48,4 @@ As the developer, I want to have a plan and starting point from which I want to 
 
 - [x] Build a connection to a open meteo
 
-- [ ] Create script that generates appropriate plant data according to my room plants
+- [x] Create script that generates appropriate plant data according to my room plants
