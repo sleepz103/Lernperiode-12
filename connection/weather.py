@@ -40,12 +40,12 @@ def get_weather_data(latitude, longitude):
         return None
 
 if __name__ == "__main__":
-    # Example coordinates for Zurich, Switzerland
-    zurich_lat = 47.3769
-    zurich_lon = 8.5417
+    # Coordinates for Baden, Switzerland
+    baden_lat = 47.475361
+    baden_lon = 8.306372
     
     print("Fetching weather data for Zurich...")
-    weather_data = get_weather_data(zurich_lat, zurich_lon)
+    weather_data = get_weather_data(baden_lat, baden_lon)
     
     if weather_data:
         # If you want to see the raw JSON data
