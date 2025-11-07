@@ -18,7 +18,7 @@ Ich möchte ein interaktives Dashboard entwickeln, das reale Wetterdaten mit sim
 
 Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverarbeitung und Visualisierung zu sammeln und ein besseres Verständnis für IoT-Systeme zu entwickeln. (68)
 
-*Note: This project will largely be carried out using AI. Reason: I noticed that remembering what to write wasn't ever important as knowing how to write. Although reduces lot of problem-solving moments, working on projects with AI has proven to be beneficial, as it saves time and allows to progress with creation.*
+*Note: This project will largely be carried out using AI. Reason: I noticed that remembering what to write wasn't ever as important as knowing how to write. Although it reduces lot of problem-solving moments, working on projects with AI has proven to be beneficial, as it saves time and allows to progress with creation.*
 
 1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
 
