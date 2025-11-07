@@ -20,8 +20,6 @@ Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverar
 
 *Note: This project will largely be carried out using AI. Reason: I noticed that remembering what to write wasn't ever important as knowing how to write. Although reduces lot of problem-solving moments, working on projects with AI has proven to be beneficial, as it saves time and allows to progress with creation.*
 
-
-
 1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
 
 2. As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably (tests, back-end block)
@@ -40,13 +38,13 @@ Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverar
 
 As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics.
 
-- [ ] As the developer, I want to draw a plan and all my ideas
+- [x] As the developer, I want to draw a plan and all my ideas
   
-  - [ ] Schema of connections
+  - [x] Schema of connections
   
-  - [ ] What is involved in the projects and what not
+  - [x] What is involved in the projects and what not
   
-  - [ ] The end result
+  - [x] The end result
 
 - [ ] Build a connection to a open meteo
 
