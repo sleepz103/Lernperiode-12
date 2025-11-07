@@ -2,7 +2,7 @@
 
 Technologien, und warum:
 
-Ich möchte mich in Richtung FHNW orientieren und meine Interesse an Studien dort. Einer der Thema ist IoT. Ich habe mir ein Projekt überlegegt, welche semi mit API arbeitet. Dabei möchte ich auch Datenbanken verwenden (entweder MongoDB oder SQL, unentschieden). Ich möchte die Daten verarbeiten, wofür ich python verwende möchte. Zum Technolgie für Darstellung werde ich mit Klassischen Web dev methoden arbeiten. (62)
+Ich möchte mein nächstes Projekt mit meinem Interesse an der FHNW und dem Studiengang, den ich dort absolvieren möchte, verbinden. Eines der Themen ist das Thema IoT. Ich habe mir ein Projekt überlegt, das semi mit API arbeitet. Dabei möchte ich auch Datenbanken verwenden (entweder MongoDB oder SQL, ich bin noch unentschieden). Ich möchte die Daten mit Python verarbeiten. Für die Darstellung werde ich mit neuen für mich Wegen für Web Dev (Flask + Chart.js) arbeiten. (70)
 
 Grobe Beschreibung des Projekts:
 
