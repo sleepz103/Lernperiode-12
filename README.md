@@ -18,7 +18,7 @@ Ich möchte ein interaktives Dashboard entwickeln, das reale Wetterdaten mit sim
 
 Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverarbeitung und Visualisierung zu sammeln und ein besseres Verständnis für IoT-Systeme zu entwickeln. (68)
 
-*Note: This project will largely be carried out using AI. Reason: I noticed that remembering what to write wasn't ever as important as knowing how to write. Although it reduces lot of problem-solving moments, working on projects with AI has proven to be beneficial, as it saves time and allows to progress with creation.*
+*Notice: A decision I made on start, that this project will largely be carried out using AI. And that I will document my work in English.*
 
 1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
 
@@ -49,3 +49,5 @@ As the developer, I want to have a plan and starting point from which I want to 
 - [x] Build a connection to a open meteo
 
 - [x] Create script that generates appropriate plant data according to my room plants
+
+Today I began with pre-planning and gathering my ideas into my project book. Following that I checked out possibilites for APIs and opened VSC to build connection with open-meteo. During work I mainly used terminal to access files, which I liked. From the session I am taking away that open-meteo is a free weather API, and that venv is a **v**irtual **env**ironment to run python scripts. I am motivated for this project and happy with my work today. (78)
