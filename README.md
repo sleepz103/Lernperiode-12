@@ -51,3 +51,7 @@ As the developer, I want to have a plan and starting point from which I want to 
 - [x] Create script that generates appropriate plant data according to my room plants
 
 Today I began with pre-planning and gathering my ideas into my project book. Following that I checked out possibilites for APIs and opened VSC to build connection with open-meteo. During work I mainly used terminal to access files, which I liked. From the session I am taking away that open-meteo is a free weather API, and that venv is a **v**irtual **env**ironment to run python scripts. I am motivated for this project and happy with my work today. (78)
+
+## 14.11
+
+[ ] create 3 diffrent tests
