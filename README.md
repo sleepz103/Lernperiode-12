@@ -54,4 +54,4 @@ Today I began with pre-planning and gathering my ideas into my project book. Fol
 
 ## 14.11
 
-[ ] create 3 diffrent tests
+[ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
