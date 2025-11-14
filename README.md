@@ -54,4 +54,22 @@ Today I began with pre-planning and gathering my ideas into my project book. Fol
 
 ## 14.11
 
-[ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
+side-project: 
+
+Background story: I have 15 pictures. I want these 15 pictures printed out on an A4-paper so that I can cut them out. 
+
+The Problem: I use paint to arrange the pictures. Pasting the pictures, arranging them to appropriate sizes and correcting the position is a tedious task. Since I do this every month, the amount of pictures changes. And the size of a picture is also variable, for some need to be bigger than others.
+
+My solution: I will create a program that can take pictures and distribute them on a A4 paper in order to print the paper and be able to cut them out.
+
+- [ ] Find library
+
+- [ ] Test script
+
+- [ ] estimate how long transfering this idea onto a website to allow for interactive adjusting of images could take
+  
+  - [ ] by finding out the technology on the internet
+
+--- 
+
+- [ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
