@@ -54,22 +54,36 @@ Today I began with pre-planning and gathering my ideas into my project book. Fol
 
 ## 14.11
 
-side-project: 
-
 Background story: I have 15 pictures. I want these 15 pictures printed out on an A4-paper so that I can cut them out. 
 
 The Problem: I use paint to arrange the pictures. Pasting the pictures, arranging them to appropriate sizes and correcting the position is a tedious task. Since I do this every month, the amount of pictures changes. And the size of a picture is also variable, for some need to be bigger than others.
 
 My solution: I will create a program that can take pictures and distribute them on a A4 paper in order to print the paper and be able to cut them out.
 
-- [ ] Find library
+- [x] Find library
 
-- [ ] Test script
+- [x] Test script
 
-- [ ] estimate how long transfering this idea onto a website to allow for interactive adjusting of images could take
+- [x] estimate how long transfering this idea onto a website to allow for interactive adjusting of images could take
   
-  - [ ] by finding out the technology on the internet
+  - [x] by finding out the technology on the internet
 
---- 
+Today I consulted my idea for the side project I started working on. The function of the programm could come in handy to me now, but I understimated the difficulty of it. I began with writing Background, the problem and the solution to allows others to imagine what I mean. My current programme can mash allpicture all pictures into one at the moment. The library I tried does a worse job. I am deciding I will continue with original project, leaving other one for the weeknds or other time. (109)
+
+## 21.11
+
+As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably
+
+By date:
 
 - [ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
+  - [x] SQL VS NoSQL. what is my use case?
+  - [ ] SQL: draw model in umlet
+
+On date:
+
+- [ ] Given the server is ready, if python script is run, then two data sets are input and printed
+
+- [ ] Given the connection is working, if expanded python script is run, today's data from meteo are pulled and inserted.
+
+- [ ] Given the script is running, if it is new hour since last data fetch, pull data since that time
