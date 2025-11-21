@@ -91,16 +91,6 @@ On date:
 
 Today I had fun. I began with creating scripts to jumpstart a database in SSMS. Then I had to create connection and there pyodbc came in handy. I decided that for the basics I will read documentation and this and that from Microsoft helped. I was able to insert test data, then at the end I had just enough time to perform API request and after that insert and read from DB. Only part missing is to do this task automatically, but working with variables was interesting itself. (88)
 
-
-
-
-
-
-
-
-
-
-
 Sources:
 
 [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
@@ -108,3 +98,19 @@ Sources:
 [🌦️ Docs | Open-Meteo.com](https://open-meteo.com/en/docs?hourly=temperature_2m,relative_humidity_2m,cloud_cover&latitude=47.4733&longitude=8.3059)
 
 [Python SQL Driver - pyodbc | Microsoft Learn](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/python-sql-driver-pyodbc-quickstart?view=sql-server-ver17&tabs=azure-sql)
+
+## 28.11
+
+As a student developer, I want to visualize all collected data in one dashboard, in order to connect weather and plants in a meaningful way. (no predictions, out of scope of the project + open-meteo already supplies that)
+
+By date:
+
+- [ ] Given the script is run, if it is new hour since last data fetch, pull data since that time with one run
+
+On date: 
+
+- [ ] Given there's runtime to handle requests, if client sends request, send data from past 24h to client
+
+- [ ] Given the data is received, display it on a timeline graph
+
+- [ ] Given the client opens the app, if it loads, it displays rough end-product design (block for styling)
