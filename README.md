@@ -22,7 +22,7 @@ Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverar
 
 1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
 
-2. As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably (tests, back-end block)
+2. As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably (back-end block)
 
 3. As a student developer, I want to visualize all collected and predicted data in one dashboard, in order to connect weather, plants, and predictions in a meaningful way. (front-end block)
 
@@ -76,15 +76,35 @@ As the developer, I want to be sure that everything is connected, in order to ha
 
 By date:
 
-- [ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
+- [x] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
   - [x] SQL VS NoSQL. what is my use case?
-I considered between SQL and NoSQL. The general consensus is to use NoSQL for IoT. However for the scale of my project I choose SQL, for the data I will work with is well structured, whereas only in NoSQL I'd benefit from the unstructured data. Another advantage NoSQL would bring was the ability to perform sharding, which I am not anticipating to do. Last but not least I imagine working with structured that will be easier for me, to do queries and such in comparisson to key-value pairs.
+    I considered between SQL and NoSQL. The general consensus is to use NoSQL for IoT. However for the scale of my project I choose SQL, for the data I will work with is well structured, whereas only in NoSQL I'd benefit from the unstructured data. Another advantage NoSQL would bring was the ability to perform sharding, which I am not anticipating to do. Last but not least I imagine working with structured that will be easier for me, to do queries and such in comparisson to key-value pairs.
   - [x] SQL: draw model in umlet
 
 On date:
 
-- [ ] Given the server is ready, if python script is run, then two data sets are input and printed
+- [x] Given the server is ready, if python script is run, then two data sets are input and printed
 
-- [ ] Given the connection is working, if expanded python script is run, today's data from meteo are pulled and inserted.
+- [x] Given the connection is working, if expanded python script is run, today's data from meteo are pulled and inserted.
 
 - [ ] Given the script is running, if it is new hour since last data fetch, pull data since that time
+
+Today I had fun. I began with creating scripts to jumpstart a database in SSMS. Then I had to create connection and there pyodbc came in handy. I decided that for the basics I will read documentation and this and that from Microsoft helped. I was able to insert test data, then at the end I had just enough time to perform API request and after that insert and read from DB. Only part missing is to do this task automatically, but working with variables was interesting itself. (88)
+
+
+
+
+
+
+
+
+
+
+
+Sources:
+
+[Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+
+[🌦️ Docs | Open-Meteo.com](https://open-meteo.com/en/docs?hourly=temperature_2m,relative_humidity_2m,cloud_cover&latitude=47.4733&longitude=8.3059)
+
+[Python SQL Driver - pyodbc | Microsoft Learn](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/python-sql-driver-pyodbc-quickstart?view=sql-server-ver17&tabs=azure-sql)

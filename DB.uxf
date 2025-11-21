@@ -18,7 +18,6 @@ temperature : float
 humidity : float
 windspeed : float
 precipitation : float
-cloudcover : float
 </panel_attributes>
     <additional_attributes/>
   </element>
