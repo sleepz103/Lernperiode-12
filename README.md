@@ -78,7 +78,8 @@ By date:
 
 - [ ] As an employer I want to know why this specific database was chosen in order to evaluate developer's technical competence.
   - [x] SQL VS NoSQL. what is my use case?
-  - [ ] SQL: draw model in umlet
+I considered between SQL and NoSQL. The general consensus is to use NoSQL for IoT. However for the scale of my project I choose SQL, for the data I will work with is well structured, whereas only in NoSQL I'd benefit from the unstructured data. Another advantage NoSQL would bring was the ability to perform sharding, which I am not anticipating to do. Last but not least I imagine working with structured that will be easier for me, to do queries and such in comparisson to key-value pairs.
+  - [x] SQL: draw model in umlet
 
 On date:
 

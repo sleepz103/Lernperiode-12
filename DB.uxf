@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>104</x>
+      <y>240</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+WeatherMeasurement
+--
+&lt;&lt;PK&gt;&gt;weatherID {auto}
+timestamp : datetime {not null}
+temperature : float
+humidity : float
+windspeed : float
+precipitation : float
+cloudcover : float
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>240</y>
+      <w>208</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+SensorMeasurement
+--
+&lt;&lt;PK&gt;&gt;sensorMeasurementID {auto}
+plantID : int {not null} &lt;&lt;FK&gt;&gt; Plant.plantID
+timestamp : datetime {not null}
+soilMoisture : float
+temperature : float
+light : float
+humidity : float
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>240</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+Plant
+--
+&lt;&lt;PK&gt;&gt;plantID {auto}
+name : string {not null}
+location : string
+species : string
+createdAt : datetime {not null}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>568</x>
+      <y>304</y>
+      <w>136</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;
+m1=
+m2=</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+</diagram>
