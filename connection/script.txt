@@ -1,0 +1,46 @@
+---------------------------------------------------------
+-- CREATE DATABASE
+---------------------------------------------------------
+CREATE DATABASE Lernperiode12;
+GO
+
+USE Lernperiode12;
+GO
+
+---------------------------------------------------------
+-- TABLE: Plant
+---------------------------------------------------------
+CREATE TABLE Plant (
+    plantID INT IDENTITY(1,1) PRIMARY KEY,
+    name NVARCHAR(100) NOT NULL,
+    location NVARCHAR(100) NULL
+);
+GO
+
+---------------------------------------------------------
+-- TABLE: SensorMeasurement
+---------------------------------------------------------
+CREATE TABLE SensorMeasurement (
+    sensorMeasurementID INT IDENTITY(1,1) PRIMARY KEY,
+    plantID INT NOT NULL,
+    timestamp DATETIME NOT NULL,
+    soilMoisture FLOAT NULL,
+    temperature FLOAT NULL,
+
+    CONSTRAINT FK_SensorMeasurement_Plant 
+        FOREIGN KEY (plantID) REFERENCES Plant(plantID)
+);
+GO
+
+---------------------------------------------------------
+-- TABLE: WeatherMeasurement
+---------------------------------------------------------
+CREATE TABLE WeatherMeasurement (
+    weatherID INT IDENTITY(1,1) PRIMARY KEY,
+    timestamp DATETIME NOT NULL,
+    temperature FLOAT NULL,
+    humidity FLOAT NULL,
+    windspeed FLOAT NULL,
+    precipitation FLOAT NULL,
+);
+GO

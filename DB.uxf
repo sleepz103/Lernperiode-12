@@ -38,8 +38,6 @@ plantID : int {not null} &lt;&lt;FK&gt;&gt; Plant.plantID
 timestamp : datetime {not null}
 soilMoisture : float
 temperature : float
-light : float
-humidity : float
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -57,8 +55,6 @@ Plant
 &lt;&lt;PK&gt;&gt;plantID {auto}
 name : string {not null}
 location : string
-species : string
-createdAt : datetime {not null}
 </panel_attributes>
     <additional_attributes/>
   </element>
