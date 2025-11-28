@@ -20,6 +20,8 @@ Ziel des Projekts ist es, praktische Erfahrung mit APIs, Datenbanken, Datenverar
 
 *Notice: A decision I made on start, that this project will largely be carried out using AI. And that I will document my work in English.*
 
+*28.11 Notice: Because I use Jupyter, I use less AI, for writing in notebook is more try-and-error friendly, and so I can try a lot on my own.*
+
 1. As the developer, I want to have a plan and starting point from which I want to develop from, in order to apply further changes and epics. (start block)
 
 2. As the developer, I want to be sure that everything is connected, in order to have security that the system works reliably (back-end block)
@@ -114,3 +116,29 @@ On date:
 - [ ] Given the data is received, display it on a timeline graph
 
 - [ ] Given the client opens the app, if it loads, it displays rough end-product design (block for styling)
+
+Today I started work with turning AP's into github issues, to try out and make my works seem proffessional. Then I went onto a new branch and created another script which will be the working one, as the old one is used for testing. I once again worked with pyodbc and learned how cursor works. I seem to have underestimated this task. The plan was to
+
+`# check last data time`
+
+`# get data from 48 hours`
+
+`    # define end and start`
+
+`# compare pulled data with last inserted time`
+
+`# leave only the data that is higher than max time from db`
+
+`# insert `
+
+`# if there is a gap`
+
+`# then inform there's missing data because pulled from only 48h`
+
+`# missing: x hours`
+
+I realized 1) 48 hours is not a good solution. One could extend by calulating excactly how many hours need to be requested. 2) I am realised I want to use pandas module. But then I ran into issue with converting time. (109)
+
+## 5.12
+
+- [ ] 
