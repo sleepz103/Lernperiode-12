@@ -150,3 +150,5 @@ On date:
 - [ ] Given the data is received, display it on a timeline graph
 
 - [ ] Given the client opens the app, if it loads, it displays rough end-product design
+
+Today I was away from my work station until 15:30 o'clock due to my visit at a company for my intership in Zürich. I'm working on the script.
