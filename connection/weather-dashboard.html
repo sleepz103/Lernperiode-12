@@ -189,6 +189,8 @@
 
     <script>
         const API_URL = 'http://localhost:5000/weather-measurement';
+        const REFRESH_URL = 'http://localhost:5000/refresh-data';
+        let currentChart = null;
 
         async function fetchWeatherData() {
             try {
@@ -213,10 +215,15 @@
         function createTemperatureChart(data) {
             const ctx = document.getElementById('temperatureChart').getContext('2d');
             
+            // Destroy existing chart if it exists
+            if (currentChart) {
+                currentChart.destroy();
+            }
+            
             const timestamps = data.map(d => new Date(d.timestamp));
             const temperatures = data.map(d => d.temperature);
 
-            new Chart(ctx, {
+            currentChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: timestamps,
@@ -317,8 +324,60 @@
             }
         }
 
+        // Refresh button handler
+        async function handleRefresh() {
+            const button = document.getElementById('refreshButton');
+            button.disabled = true;
+            button.textContent = '⏳';
+            
+            try {
+                // Trigger data update
+                const refreshResponse = await fetch(REFRESH_URL, { method: 'POST' });
+                const refreshResult = await refreshResponse.json();
+                
+                if (!refreshResult.success) {
+                    throw new Error(refreshResult.message);
+                }
+                
+                // Fetch updated data
+                const data = await fetchWeatherData();
+                
+                if (!data || data.length === 0) {
+                    throw new Error('No data received from API');
+                }
+                
+                // Update stats and chart
+                const latestData = data[data.length - 1];
+                updateStats(latestData);
+                createTemperatureChart(data);
+                
+                // Update last update time
+                const lastUpdate = new Date(latestData.timestamp);
+                document.getElementById('lastUpdate').textContent = 
+                    `Last updated: ${lastUpdate.toLocaleString()}`;
+                
+                button.textContent = '✓';
+                setTimeout(() => {
+                    button.textContent = '🔄️';
+                    button.disabled = false;
+                }, 1000);
+                
+            } catch (error) {
+                console.error('Error refreshing data:', error);
+                button.textContent = '✗';
+                setTimeout(() => {
+                    button.textContent = '🔄️';
+                    button.disabled = false;
+                }, 2000);
+                alert(`Failed to refresh data: ${error.message}`);
+            }
+        }
+
         // Load data when page loads
         initDashboard();
+        
+        // Attach refresh handler
+        document.getElementById('refreshButton').addEventListener('click', handleRefresh);
     </script>
 </body>
 </html>
