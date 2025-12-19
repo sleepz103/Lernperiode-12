@@ -185,6 +185,6 @@ On date:
 
 - [x] Given there's runtime to handle requests (Flask), if client sends request, send data from past **48h (ignoring blanks)** to client
 
-- [ ] Given the data is received, display it on a timeline graph with Chart.js
+- [x] Given the data is received, display it on a timeline graph with Chart.js
 
 - [ ] Reflection and Presentation
