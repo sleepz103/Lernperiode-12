@@ -3,6 +3,7 @@ from flask_cors import CORS
 from os import getenv
 from dotenv import load_dotenv
 import pyodbc
+from auto_update import update_weather_data
 
 app = Flask(__name__)
 CORS(app)
@@ -47,6 +48,14 @@ def weather_measurent():
     ]
     
     return jsonify(data)
+
+@app.route("/refresh-data", methods=["POST"])
+def refresh_data():
+    try:
+        update_weather_data()
+        return jsonify({"success": True, "message": "Data updated successfully"})
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
