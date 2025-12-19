@@ -139,6 +139,34 @@ Today I started work with turning AP's into github issues, to try out and make m
 
 I realized 1) 48 hours is not a good solution. One could extend by calulating excactly how many hours need to be requested. 2) I am realised I want to use pandas module. But then I ran into issue with converting time. (109)
 
-## 5.12
+## 19.12
 
-- [ ] 
+State of project:
+
+⏱️worked 3 times on the project
+
+✅DB
+
+✅Understanding pyodbc
+
+⏹️auto-insert fresh data
+
+⏹️visualisation with flask
+
+Last issue: Couldn't request last two days including hours.
+
+it starts off with from 00:00 two days ago
+
+Last push of project:
+
+By date:
+
+- [x] Given the script is run, if it is new hour since last data fetch, pull data since that **day** with one run
+
+On date:
+
+- [ ] Given there's runtime to handle requests (Flask), if client sends request, send data from past **48h (ignoring blanks)** to client
+
+- [ ] Given the data is received, display it on a timeline graph with Chart.js
+
+- [ ] TBD
