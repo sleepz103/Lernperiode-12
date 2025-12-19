@@ -241,22 +241,49 @@ On date:
 
 - [x] Given the data is received, display it on a timeline graph with Chart.js
 
-- [ ] Reflection and Presentation
+- [x] Reflection and Presentation
+
+Today I began with addressing the issue that I couldn't fix myself. I asked AI for help and got the DB updating script working. Following this everything went smoothly. I turned jupyter notebook to script, then slowly figured out Flask and in the end generated website. With minor missights like `what if DB has no data` or `how to add the sync button`, I brought the project to the bare state I planned it from the beginning. (77)
 
 ## Reflexion
 
-Out of the goals for the project...
+Over the course of the project, I noticed clear patterns in how I approach problem‑solving and motivation. Early on, planning on paper and testing connections gave me a strong make‑or‑break validation, which boosted my engagement. When a second project idea appeared, I explored it by outlining background, problem, and solution. This showed that I can evaluate ideas well, but also that I tend to underestimate the work of a task. It's needed time, to be excact.
 
-I majorly achieved to:
+As the technical work began, I relied on documentation first, as well as Jupyter to keep the process playful and exploratory. And by creating issues and branches on Githug, I gave myself tiny goals which supported my progress. However, whenever I though of a solution too narrowly, it lead to a blocker.
 
-- do useful visualisation
+Toward the end, revisiting the project state and lowering expectations helped me regain motivation. I used AI effectively to avoid getting stuck and fixed issues quickly. (154)
 
-- master git flow
 
-and minorly improved in:
+VBV:
+Whenever I see output of my work, I understand what's going more better than when debugging.
+Whenever I describe a user story, it helps to attach acceptance criteria in order to know when it is completed and I can delete branch.
+Whenever an issue starts to get complicated, I should consult AI or teacher because solving it too long is unproductive and unmotivating.
 
-- working with DB
+## The main good, the smaller bad and the future
+My main achievements:
 
-- setting up useful interconnections
+- Do useful visualisation
 
-- working with ever growing data
+- Master git flow
+
+My smaller improvements:
+
+- Working with DB
+
+- Setting up useful interconnections
+
+- Working with ever growing data
+
+What I can do to grow this project:
+
+- Allow choosing user's city
+
+- Suggest outdoor wear based on data
+
+- Host scripts to access dashboard just via URL and hand in latest fetch
+
+- Integrate plant section, where plant data is also stored and studied
+
+- Perform forecast based on data (Machine learning, a little out of scope)
+
+
