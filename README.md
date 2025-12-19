@@ -1,5 +1,59 @@
 # Lernperiode-12
 
+## Showcase
+
+Working with Microsoft SQL DB, Python Flask and Chart.js, I created a dashboard for local weather. Fitted with insightful graph and a sync button, you can determine how to  dress yourself today!
+
+<img title="app_preview" src="./showcase_sync.gif" alt="showcase_gif">  
+
+## Key positions in code
+
+The **auto_update** method fills in all missing hourly data from the last saved timestamp to now, ensuring no duplicates, or retrieves a new set of data, incase the app hasn't been used for two days.
+```python
+        # Get the last saved timestamp from database
+        cursor.execute("SELECT MAX(timestamp) FROM WeatherMeasurement")
+        last_saved_time = cursor.fetchone()[0]
+
+        if last_saved_time is None:
+            last_saved_time = datetime.now() - timedelta(hours=48)
+            print("No previous data found. Starting from 48 hours ago.")
+        else:
+            print(f"Last saved time: {last_saved_time}")
+
+        # Fetch weather data for City...
+```
+Meanwhile the **app.py** is responsible for handling requests. A GET route `/weather-measurement` retrieves data from DB, filtering server-side.
+```python
+@app.route("/weather-measurement")
+def weather_measurent():
+    cursor.execute("""
+        SELECT
+            timestamp,
+            temperature,
+            humidity,
+            windspeed,
+            precipitation
+        FROM WeatherMeasurement
+        WHERE timestamp >= DATEADD(HOUR, -48, GETDATE())
+          AND temperature IS NOT NULL
+          AND humidity IS NOT NULL
+          AND windspeed IS NOT NULL
+          AND precipitation IS NOT NULL
+        ORDER BY timestamp ASC
+""")
+```
+And POST `/refresh-data` updates DB with latest data, which the ever growing amount can be later used for analytics.
+```python
+@app.route("/refresh-data", methods=["POST"])
+def refresh_data():
+    try:
+        update_weather_data()
+        return jsonify({"success": True, "message": "Data updated successfully"})
+```
+
+
+## Introduction / Einführung
+
 Technologien, und warum:
 
 Ich möchte mein nächstes Projekt mit meinem Interesse an der FHNW und dem Studiengang, den ich dort absolvieren möchte, verbinden. Eines der Themen ist das Thema IoT. Ich habe mir ein Projekt überlegt, das semi mit API arbeitet. Dabei möchte ich auch Datenbanken verwenden (entweder MongoDB oder SQL, ich bin noch unentschieden). Ich möchte die Daten mit Python verarbeiten. Für die Darstellung werde ich mit neuen für mich Wegen für Web Dev (Flask + Chart.js) arbeiten. (70)
@@ -188,3 +242,21 @@ On date:
 - [x] Given the data is received, display it on a timeline graph with Chart.js
 
 - [ ] Reflection and Presentation
+
+## Reflexion
+
+Out of the goals for the project...
+
+I majorly achieved to:
+
+- do useful visualisation
+
+- master git flow
+
+and minorly improved in:
+
+- working with DB
+
+- setting up useful interconnections
+
+- working with ever growing data
