@@ -1,9 +1,11 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from os import getenv
 from dotenv import load_dotenv
 import pyodbc
 
 app = Flask(__name__)
+CORS(app)
 
 # establish connection
 cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
