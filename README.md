@@ -139,7 +139,6 @@ Today I started work with turning AP's into github issues, to try out and make m
 
 I realized 1) 48 hours is not a good solution. One could extend by calulating excactly how many hours need to be requested. 2) I am realised I want to use pandas module. But then I ran into issue with converting time. (109)
 
-
 ## 5.12
 
 - [ ] Given the script is run, if it is new hour since last data fetch, pull data since that time with one run
@@ -152,7 +151,11 @@ On date:
 
 - [ ] Given the client opens the app, if it loads, it displays rough end-product design
 
-Today I was away from my work station until 15:30 o'clock due to my visit at a company for my intership in Zürich. I'm working on the script.
+Today I was away from my work station until 15:30 o'clock due to my visit at a company for my intership in Zürich. I'm working on the script. 
+
+### 10.12
+
+Commit dc8f858 states auto insert script has was worked on. However, after few about 2,5h, while it correctly requested data, it also brought participation, meaning it still wasn't fully done. (written on 19.12)
 
 ## 19.12
 
@@ -180,8 +183,8 @@ By date:
 
 On date:
 
-- [ ] Given there's runtime to handle requests (Flask), if client sends request, send data from past **48h (ignoring blanks)** to client
+- [x] Given there's runtime to handle requests (Flask), if client sends request, send data from past **48h (ignoring blanks)** to client
 
 - [ ] Given the data is received, display it on a timeline graph with Chart.js
 
-- [ ] TBD
+- [ ] Reflection and Presentation
