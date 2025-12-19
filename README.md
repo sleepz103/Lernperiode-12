@@ -139,6 +139,21 @@ Today I started work with turning AP's into github issues, to try out and make m
 
 I realized 1) 48 hours is not a good solution. One could extend by calulating excactly how many hours need to be requested. 2) I am realised I want to use pandas module. But then I ran into issue with converting time. (109)
 
+
+## 5.12
+
+- [ ] Given the script is run, if it is new hour since last data fetch, pull data since that time with one run
+
+On date: 
+
+- [ ] Given there's runtime to handle requests, if client sends request, send data from past 24h to client
+
+- [ ] Given the data is received, display it on a timeline graph
+
+- [ ] Given the client opens the app, if it loads, it displays rough end-product design
+
+Today I was away from my work station until 15:30 o'clock due to my visit at a company for my intership in Zürich. I'm working on the script.
+
 ## 19.12
 
 State of project:
