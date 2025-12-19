@@ -294,10 +294,28 @@
 
         async function initDashboard() {
             try {
-                const data = await fetchWeatherData();
+                let data = await fetchWeatherData();
                 
+                // If no data exists, automatically fetch fresh data
                 if (!data || data.length === 0) {
-                    throw new Error('No data received from API');
+                    document.getElementById('loading').textContent = 'No data found. Fetching fresh data...';
+                    
+                    const refreshResponse = await fetch(REFRESH_URL, { method: 'POST' });
+                    const refreshResult = await refreshResponse.json();
+                    
+                    if (!refreshResult.success) {
+                        throw new Error(`Failed to fetch initial data: ${refreshResult.message}`);
+                    }
+                    
+                    // Wait a moment for data to be inserted
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                    
+                    // Try fetching again
+                    data = await fetchWeatherData();
+                    
+                    if (!data || data.length === 0) {
+                        throw new Error('No data available after refresh');
+                    }
                 }
 
                 // Hide loading, show content
