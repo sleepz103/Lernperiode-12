@@ -2,7 +2,7 @@
 
 ## Showcase
 
-Working with Microsoft SQL DB, Python Flask and Chart.js, I created a dashboard for local weather. Fitted with insightful graph and a sync button, you can determine how to  dress yourself today!
+Working with plain HTML + CSS but with focus on Microsoft SQL DB, Python Flask and Chart.js, I created a dashboard for local weather. Fitted with insightful graph and a sync button, you can determine how to  dress yourself today!
 
 <img title="app_preview" src="./showcase_sync.gif" alt="showcase_gif">  
 
